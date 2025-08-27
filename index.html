@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulyator (JS)</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .calculator {
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    }
+    .result {
+      min-height: 60px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px;
+      background: #f1f3f5;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="calculator">
+      <h2 class="text-center mb-4">JS Kalkulyator</h2>
+      
+      <!-- inputlar -->
+      <div class="mb-3">
+        <label for="a" class="form-label">Son a (string)</label>
+        <input type="text" id="a" class="form-control" placeholder="Masalan: 12">
+      </div>
+      <div class="mb-3">
+        <label for="b" class="form-label">Son b (string)</label>
+        <input type="text" id="b" class="form-control" placeholder="Masalan: 3">
+      </div>
+
+      <!-- tugmalar -->
+      <div class="d-flex gap-2 flex-wrap mb-3">
+        <button class="btn btn-primary" data-op="add">+</button>
+        <button class="btn btn-primary" data-op="sub">−</button>
+        <button class="btn btn-primary" data-op="mul">×</button>
+        <button class="btn btn-primary" data-op="div">÷</button>
+        <button class="btn btn-outline-danger ms-auto" id="clear">Tozalash</button>
+      </div>
+
+      <!-- natija -->
+      <div class="result" id="result">Natija shu yerda chiqadi</div>
+    </div>
+  </div>
+
+  <!-- JS fayl ulash -->
+  <script src="script.js"></script>
+</body>
+</html>
